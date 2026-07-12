@@ -1,0 +1,12 @@
+# Hugo build output
+/public/
+
+# Node.js
+node_modules/
+
+# Internal working documents - not for public repo
+Tổng Hợp/
+
+# Temporary files
+*.tmp
+*.log
