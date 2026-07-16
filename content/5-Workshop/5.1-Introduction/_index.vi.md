@@ -21,7 +21,7 @@ Request từ React frontend → API Gateway (JWT qua Cognito Authorizer) → Lam
 | Huy | API Gateway + Lambda Core (Transaction/Budget/Report) + Notifications (SNS/SQS/EventBridge) | 5, 8 |
 | Công | React Frontend + Cognito login flow + Gemini AI integration | 6 |
 
-(Modules 1, 2, 9, 10 — Introduction, Prerequisites, Testing, Monitoring — thực hiện chung cả nhóm)
+(Các bài thực hành 1, 2, 9, 10, 11, 12 — Introduction, Prerequisites, Testing, Monitoring, Deployment, Cleanup — được thực hiện chung bởi cả nhóm.)
 
 ### 2. Luồng production
 

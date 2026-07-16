@@ -21,7 +21,7 @@ Request flow: React frontend → API Gateway (JWT via Cognito Authorizer) → La
 | Huy | API Gateway + Lambda Core (Transaction/Budget/Report) + Notifications (SNS/SQS/EventBridge) | 5, 8 |
 | Cong | React Frontend + Cognito login flow + Gemini AI integration | 6 |
 
-(Modules 1, 2, 9, 10 — Introduction, Prerequisites, Testing, Monitoring — were done together by the whole team.)
+(Modules 1, 2, 9, 10, 11, 12 — Introduction, Prerequisites, Testing, Monitoring, Deployment, Cleanup — were done together by the whole team.)
 
 ### 2. Production Flow
 
