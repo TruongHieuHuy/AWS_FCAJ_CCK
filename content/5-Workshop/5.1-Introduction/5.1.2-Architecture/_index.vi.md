@@ -28,7 +28,7 @@ Dự án Budget Tracker sử dụng một hệ sinh thái Managed Services mạn
 
 ### 3. Giải thích kiến trúc hệ thống
 
-![Sơ đồ kiến trúc Budget Tracker](/images/5-Workshop/5.1-Introduction/architecture.png)
+![Sơ đồ kiến trúc Budget Tracker](/images/5-Workshop/5.1-Introduction/architecture.jpg)
 
 Hệ thống được thiết kế theo mô hình **Multi-layer (Nhiều tầng)** nhằm tối đa hóa tính độc lập, dễ dàng nâng cấp và bảo trì:
 

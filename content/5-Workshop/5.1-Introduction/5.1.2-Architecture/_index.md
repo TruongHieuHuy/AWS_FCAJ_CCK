@@ -28,7 +28,7 @@ The Budget Tracker project utilizes a powerful ecosystem of Managed Services:
 
 ### 3. System Architecture Explanation
 
-![Budget Tracker Architecture Diagram](/images/5-Workshop/5.1-Introduction/architecture.png)
+![Budget Tracker Architecture Diagram](/images/5-Workshop/5.1-Introduction/architecture.jpg)
 
 The system is designed following a **Multi-layer** model to maximize independence, ease of upgrading, and maintenance:
 
