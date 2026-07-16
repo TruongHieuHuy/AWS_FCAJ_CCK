@@ -50,5 +50,4 @@ For this reason, throughout my internship journey in the **First Cloud AI Journe
   <a href="5-workshop/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🛠️ 5. Workshop</a>
   <a href="6-self-evaluation/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">📈 6. Self-Evaluation</a>
   <a href="7-feedback/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🤝 7. Feedback</a>
-  <a href="8-website/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🌐 8. Website</a>
 </div>

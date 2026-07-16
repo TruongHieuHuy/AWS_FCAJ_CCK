@@ -9,6 +9,8 @@ pre: " <b> 5. </b> "
 
 ### Overview
 
+**Budget Tracker Website:** [https://d3ja9nvtyjzo9o.cloudfront.net/](https://d3ja9nvtyjzo9o.cloudfront.net/)
+
 Welcome to the Workshop documentation for deploying the **Budget Tracker** personal finance management application. In this series of practical exercises, we will step-by-step build a complete system applying **AWS Serverless** and **Event-driven Architecture**.
 
 The application aims to provide a flexible personal expense management solution, integrating automated transaction categorization using artificial intelligence (Google Gemini) and a multi-channel notification system, while keeping operational costs optimized at the lowest level thanks to the power of cloud computing.

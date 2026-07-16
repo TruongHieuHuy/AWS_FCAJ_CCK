@@ -50,5 +50,4 @@ Chính vì lý do đó, trong suốt hành trình thực tập tại **First Clo
   <a href="5-workshop/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🛠️ 5. Dự án Workshop</a>
   <a href="6-self-evaluation/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">📈 6. Tự Đánh giá</a>
   <a href="7-feedback/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🤝 7. Chia sẻ & Góp ý</a>
-  <a href="8-website/" style="display: block; padding: 1.2rem 1rem; border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: inherit;">🌐 8. Website</a>
 </div>
