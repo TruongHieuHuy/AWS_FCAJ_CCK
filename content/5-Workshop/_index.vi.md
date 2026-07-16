@@ -11,6 +11,8 @@ pre: " <b> 5. </b> "
 
 **Trang web Budget Tracker:** [https://d3ja9nvtyjzo9o.cloudfront.net/](https://d3ja9nvtyjzo9o.cloudfront.net/)
 
+**Video Demo:** [https://drive.google.com/file/d/1_q4sdSqufmfxGnCE7WsOOij97Xxfb1hk/view?usp=sharing](https://drive.google.com/file/d/1_q4sdSqufmfxGnCE7WsOOij97Xxfb1hk/view?usp=sharing)
+
 Chào mừng bạn đến với tài liệu hướng dẫn (Workshop) triển khai ứng dụng quản lý tài chính cá nhân **Budget Tracker**. Trong chuỗi bài thực hành này, chúng ta sẽ từng bước xây dựng một hệ thống hoàn chỉnh ứng dụng kiến trúc **AWS Serverless** và **Event-driven Architecture** (Kiến trúc hướng sự kiện).
 
 Ứng dụng hướng đến việc cung cấp một giải pháp quản lý chi tiêu cá nhân linh hoạt, tích hợp tính năng tự động phân loại giao dịch bằng trí tuệ nhân tạo (Google Gemini) và hệ thống thông báo đa kênh, trong khi vẫn tối ưu hóa chi phí vận hành ở mức thấp nhất nhờ sức mạnh của điện toán đám mây.

@@ -12,7 +12,8 @@
 
 ---
 
-🌐 **[Live Portfolio Website:](https://truonghieuhuy.github.io/AWS_FCAJ_CCK/)** &nbsp;|&nbsp; 🎥 **[Video Demo:](https://drive.google.com/file/d/1ROS5Y9MkUJszY9LHJnl0AXY4IQVt_0Kd/view?usp=sharing)** &nbsp;|&nbsp; 📄 **[Budget Tracker Website:](https://d3ja9nvtyjzo9o.cloudfront.net/)**
+🌐 **[Live Portfolio Website:](https://truonghieuhuy.github.io/AWS_FCAJ_CCK/)** &nbsp;|&nbsp; 🎥 **[Video Demo:](https://drive.google.com/file/d/1_q4sdSqufmfxGnCE7WsOOij97Xxfb1hk/view?usp=sharing)** &nbsp;|&nbsp; 
+📄 **[Budget Tracker Website:](https://d3ja9nvtyjzo9o.cloudfront.net/)**
 
 </div>
 

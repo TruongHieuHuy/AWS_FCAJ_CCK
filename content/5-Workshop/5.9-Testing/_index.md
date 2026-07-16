@@ -8,8 +8,6 @@ pre: "<b>5.9. </b>"
 
 **Member:** Whole team
 
-**Demo Video:** [https://drive.google.com/file/d/1ROS5Y9MkUJszY9LHJnl0AXY4IQVt_0Kd/view?usp=sharing](https://drive.google.com/file/d/1ROS5Y9MkUJszY9LHJnl0AXY4IQVt_0Kd/view?usp=sharing)
-
 ### 9.1 Frontend Unit Tests (Vitest)
 
 ```
