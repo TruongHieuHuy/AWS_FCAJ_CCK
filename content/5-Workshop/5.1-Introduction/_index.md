@@ -12,7 +12,7 @@ Budget Tracker is a personal finance management platform built on AWS Serverless
 
 Request flow: React frontend → API Gateway (JWT via Cognito Authorizer) → Lambda business logic → DynamoDB/S3 for data storage, with a notification pipeline via SNS + SQS + EventBridge sending emails to users.
 
-### Team Assignment — 4 Members, 1 Shared Account
+### Team Assignment — Group CCK (4 Members, 1 Shared Account)
 
 | Member | Area | Workshop Sections |
 |---|---|---|

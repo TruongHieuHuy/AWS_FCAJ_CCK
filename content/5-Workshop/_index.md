@@ -1,5 +1,5 @@
 ---
-title: "Workshop"
+title: "Workshop - Team CCK"
 date: 2026-07-05
 weight: 5
 chapter: false
@@ -27,7 +27,7 @@ After completing the 12 practical Modules of this course, you will be able to:
 - Process asynchronous business flows using **Amazon SNS** and **Amazon SQS**.
 - Deploy Infrastructure as Code (IaC) automatically through **AWS SAM** and **GitHub Actions**.
 
-### Team Assignment — 4 Members, 1 Shared Account
+### Team Assignment — Group CCK (4 Members, 1 Shared Account)
 
 | Member | Area | Workshop Sections |
 |---|---|---|

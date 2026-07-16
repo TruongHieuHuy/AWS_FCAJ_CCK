@@ -1,5 +1,5 @@
 ---
-title: "Workshop"
+title: "Workshop - Nhóm CCK"
 date: 2026-07-05
 weight: 5
 chapter: false
@@ -27,7 +27,7 @@ Sau khi hoàn thành 12 Module thực hành của khóa học, bạn sẽ có kh
 - Xử lý các luồng nghiệp vụ bất đồng bộ bằng **Amazon SNS** và **Amazon SQS**.
 - Triển khai Infrastructure as Code (IaC) tự động thông qua **AWS SAM** và **GitHub Actions**.
 
-### Phân công thành viên — 4 Thành viên, 1 Account chung
+### Phân công thành viên — Nhóm CCK (4 Thành viên, 1 Account chung)
 
 | Thành viên | Khối phụ trách | Mục |
 |---|---|---|
