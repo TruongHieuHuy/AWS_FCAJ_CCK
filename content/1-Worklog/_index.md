@@ -6,48 +6,48 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This is the complete 12-week internship worklog from my time in the **First Cloud AI Journey (FCAJ)** program, built around the team project **Budget Tracker** — a personal finance management application on the AWS Serverless stack.
+This is the complete 12-week internship worklog from my participation in the **First Cloud AI Journey (FCAJ)** program, integrating both the **16 AWS Labs hands-on curriculum** and the **Group Project (Serverless Budget Tracker) & Personal Workshop progression**.
 
 The 12-week timeline is structured across 5 progressive phases:
 
-**Phase 1 — Environment Setup & System Design (Weeks 1–3)**
+**Phase 1 — Environment Setup, Onboarding & System Design (Weeks 1–3)**
 
-**Week 1:** [Kickoff & Root Cause Analysis](1.1-week1/) — Studied FCAJ orientation, provisioned AWS account with security baseline (MFA, IAM Least Privilege), resolved account lockout via Root Cause Analysis.
+**Week 1:** [Kickoff, Root Cause Analysis & Project Proposal](1.1-Week1/) — Studied FCAJ orientation & Cloud Journey roadmap; provisioned AWS account, resolved account lockout via Root Cause Analysis; surveyed financial domain and defined group project scope.
 
-**Week 2:** [Onboarding & Mitigation Strategy](1.2-week2/) — Unblocked progress with a backup AWS account, completed 5/5 Onboarding tasks (EC2, Lambda, RDS Aurora, AWS Budgets, Amazon Bedrock), activated Cloud Credits.
+**Week 2:** [Onboarding Tasks & Mitigation Strategy](1.2-Week2/) — Unblocked progress with a backup AWS account; completed 5/5 Onboarding tasks (EC2, Lambda, RDS Aurora, AWS Budgets, Bedrock Claude 3 Haiku Model Access); activated $100 AWS Cloud Credits; finalized team roles.
 
-**Week 3:** [Architecture Design & Project Proposal](1.3-week3/) — Ratified Serverless Stack (API Gateway → Lambda C# → DynamoDB → S3), authored Proposal with AWS Pricing Calculator cost estimates and role-based Work Breakdown Structure.
-
----
-
-**Phase 2 — Infrastructure & Backend Core (Weeks 4–6)**
-
-**Week 4:** [Network Infrastructure & Cognito Auth](1.4-week4/) — Provisioned VPC with Public/Private Subnet isolation, configured Amazon Cognito User Pool, implemented C# JWT middleware, and aligned API Contract with Frontend.
-
-**Week 5:** [DynamoDB Single-Table Design & S3 Presigned URL](1.5-week5/) — Designed Access-Pattern-First schema to prevent Hot Partition, integrated AWS SDK DynamoDB with `QueryAsync`, deployed S3 Presigned URLs for direct client-side receipt uploads.
-
-**Week 6:** [API Gateway & Lambda Business Logic](1.6-week6/) — Configured Cognito JWT Authorizer at API Gateway perimeter, Payload Mapping Template extracting `sub` from JWT claims, deployed TransactionFunction/BudgetFunction/ReportFunction with GSI, delivered OpenAPI/Swagger spec.
+**Week 3:** [AWS Budgets/CloudWatch & Architecture Design](1.3-Week3/) — Built AWS Budgets & CloudWatch cost governance framework; attended AWS Community Day 2026 (GenAI & Multi-Agent); ratified Serverless Stack (API Gateway → C# Lambda → DynamoDB → S3); authored Proposal with AWS Pricing Calculator.
 
 ---
 
-**Phase 3 — Integration & AI/Security (Weeks 7–8)**
+**Phase 2 — VPC Networking, DynamoDB & Backend Core (Weeks 4–6)**
 
-**Week 7:** [Frontend Integration & Cold Start Optimization](1.7-week7/) — Resolved CORS failures (API Gateway + Lambda response headers), fixed JWT header format, optimized C# Lambda Cold Start from 3.5s to <1s via `ReadyToRun` compilation and `System.Text.Json` migration.
+**Week 4:** [VPC Network, Cognito Auth & Bedrock AgentCore](1.4-Week4/) — Consulted Mentors to resolve IAM/CloudShell issues; joined AWS Student Builder Group & analyzed "Hera" repo (Bedrock AgentCore Voice Agents); provisioned VPC Subnets, Cognito User Pool Auth & developed C# Lambda CRUD APIs.
 
-**Week 8:** [Gemini AI Integration & Edge Security](1.8-week8/) — Integrated `gemini-2.5-flash` with Structured Output enforcement for auto-categorization, deployed AI Chatbot with guardrail System Prompt, configured CloudFront CDN + WAFv2 Rate Limiting and Managed Rules (SQLi, XSS, Bad Bot).
+**Week 5:** [Lab 2-3 VPC Troubleshooting, DynamoDB & S3 Presigned URL](1.5-Week5/) — Signed off Lab 2 (AWS Networking & VPC); executed EC2 network troubleshooting in Lab 3; designed DynamoDB Single-Table Schema (`PK`/`SK`); deployed S3 Presigned URLs for direct receipt uploads.
 
----
-
-**Phase 4 — Resilience & Observability (Weeks 9–10)**
-
-**Week 9:** [Async SNS/SQS Pipeline & EventBridge](1.9-week9/) — Built Event-Driven Notification Pipeline (SQS buffer → SNS fan-out), implemented Idempotency Pattern with DynamoDB MessageId TTL, configured Dead Letter Queue and EventBridge Cron scheduler for monthly summaries.
-
-**Week 10:** [Final Review & Well-Architected Assessment](1.10-week10/) — Identified and resolved document drift (Single Source of Truth enforcement), assessed architecture against AWS Well-Architected Framework (Security & Cost Optimization Pillars), produced improvement backlog for Weeks 11–12.
+**Week 6:** [Lab 3-4 EC2 Lifecycle, API Gateway & Business Logic](1.6-Week6/) — Signed off Lab 3 (VPC Security/NAT/VPN); completed >50% of Lab 4 (Windows Server 2025/Linux, Custom AMI, EBS Snapshots); configured API Gateway REST API with Cognito JWT Authorizer (VTL mapping) & 3 core C# Lambdas; delivered OpenAPI specs.
 
 ---
 
-**Phase 5 — Automation & Handover (Weeks 11–12)**
+**Phase 3 — AWS Labs Sign-offs & AI/Edge Security (Weeks 7–8)**
 
-**Week 11:** [Infrastructure as Code & CI/CD Pipeline](1.11-week11/) — Authored AWS SAM `template.yaml` defining the full infrastructure stack, configured GitHub Actions pipeline with OIDC authentication (zero long-lived credentials), automated test → build → deploy on every push.
+**Week 7:** [Labs 4-9 Sign-off, Cold Start Optimization & Modules 5-6](1.7-Week7/) — Signed off consecutive AWS Labs 4 through 9 (IAM Governance, EC2-RDS Multi-AZ, Auto Scaling, ALB, CloudWatch, AWS Support); launched Lab 10 CloudFormation IaC; resolved UI CORS/JWT issues; optimized C# Lambda Cold Starts (`ReadyToRun`, 3.5s ➔ ~800ms); published Workshop Modules 5-6.
 
-**Week 12:** [UAT, Cost Audit & Project Handover](1.12-week12/) — Executed end-to-end User Acceptance Testing, audited AWS Cost Explorer (identified and eliminated idle NAT Gateway costs), deleted CloudFormation Stack, composed final internship report and presentation slides for the evaluation board.
+**Week 8:** [Advanced AWS Labs 10-14, Gemini AI & Edge Security](1.8-Week8/) — Corporate enterprise internship experience; completed AWS Labs through Lab 14; attended AWS FCAJ Community Day; integrated Google Gemini 2.5 Flash (Structured Outputs auto-categorization & Financial Chatbot with Guardrails); configured CloudFront CDN + AWS WAFv2; launched personal Workshop Web report project.
+
+---
+
+**Phase 4 — 100% AWS Labs Completion, Event-Driven & Document Alignment (Weeks 9–10)**
+
+**Week 9:** [100% Sign-off Labs 15-16 ECS/Docker & Event-Driven Async Pipeline](1.9-Week9/) — Signed off 100% of Lab 15 (Docker) & Lab 16 (Amazon ECS Blue/Green Deployment); completed 16 AWS Labs curriculum; constructed async notification pipeline (SQS + SNS) with Idempotency pattern (DynamoDB TTL 24h) & EventBridge Cron scheduler.
+
+**Week 10:** [Final Review, Single Source of Truth & Well-Architected Framework](1.10-Week10/) — Achieved 100% sign-off for Group and Personal projects; resolved documentation drift by refactoring Proposal, Blog, and Workshop per Single Source of Truth standards; studied AWS Well-Architected Framework.
+
+---
+
+**Phase 5 — Infrastructure as Code, CI/CD Pipeline & Handover (Weeks 11–12)**
+
+**Week 11:** [Infrastructure as Code (AWS SAM) & GitHub Actions OIDC](1.11-Week11/) — Authored AWS SAM `template.yaml` defining full serverless infrastructure from Lab 10 experience; constructed automated CI/CD Pipeline via GitHub Actions with OIDC authentication (zero long-lived credentials); published Workshop Module 11.
+
+**Week 12:** [UAT, Cost Audit, Resource Cleanup & Final Report](1.12-Week12/) — Executed end-to-end User Acceptance Testing (UAT); audited AWS Cost Explorer; performed Resource Cleanup (Module 12) releasing 100% billable resources on AWS Cloud; compiled Final Internship Report.
