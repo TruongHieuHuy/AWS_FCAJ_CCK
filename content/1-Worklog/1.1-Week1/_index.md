@@ -8,31 +8,31 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Research FCAJ program orientation and map the AWS Cloud Journey learning path.
-* Provision personal AWS account with security best practices.
-* Perform Root Cause Analysis (RCA) on newly created account lock.
+* Understand the overall AWS FCAJ program structure and the Cloud Journey learning roadmap.
+* Define project objectives and scope for the group project (Serverless Budget Tracker).
+* Initialize AWS account, identify and perform Root Cause Analysis (RCA) on account lockout issue.
 
 ### Tasks to be carried out this week:
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Mon - Wed | Research FCAJ orientation materials; map the AWS Cloud Journey learning roadmap by phase (Foundation → Serverless → Production). | 05/04/2026 | 05/06/2026 | [AWS Cloud Journey Roadmap](https://cloudjourney.awsstudygroup.com/) |
-| Thu - Fri | Study IaaS/PaaS/SaaS service models and the Shared Responsibility Model. Provision AWS account with security baseline: enable root MFA, create IAM Admin User, configure AWS CLI with access key. | 05/07/2026 | 05/08/2026 | [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
-| Sat - Sun | Discover account locked post-creation. Execute Root Cause Analysis: review AWS notification emails, audit billing configuration and IAM policies. Compile identity verification documents for AWS Support Case submission. | 05/09/2026 | 05/10/2026 | [AWS Support Case Guide](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) |
+| Mon - Wed | Study FCAJ orientation materials; map out the AWS Cloud Journey roadmap (Foundation → Serverless → Production). Survey personal finance management needs and define group project scope. | 05/04/2026 | 05/06/2026 | [AWS Cloud Journey Roadmap](https://cloudjourney.awsstudygroup.com/) |
+| Thu - Fri | Learn core cloud computing concepts (IaaS/PaaS/SaaS) and the Shared Responsibility Model. Create AWS account with standard security configurations: enable MFA for root, create IAM Admin User, configure AWS CLI. | 05/07/2026 | 05/08/2026 | [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| Sat - Sun | Discover account locked post-creation. Perform Root Cause Analysis: inspect email notifications from AWS, review billing settings and IAM policies. Prepare verification documentation for AWS Support Case. | 05/09/2026 | 05/10/2026 | [AWS Support Case Guide](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) |
 
 ### Week 1 Achievements:
 
-* Mastered the FCAJ learning roadmap and program operational guidelines.
-* Understood the Shared Responsibility Model and clear demarcation of AWS vs. user security responsibilities.
-* Identified the account lock root cause and prepared complete verification documentation for Support Case.
+* Mastered the learning roadmap and operating guidelines of the FCAJ program.
+* Acquired deep understanding of the Shared Responsibility Model between AWS and users.
+* Defined group project problem scope and submitted identity verification Support Case to resolve account lockout.
 
 ### Dual-Perspective Reflection:
 
 #### Technical (Cloud Engineer Perspective)
-The immediate account lockout revealed AWS's automated fraud detection mechanisms that flag anomalies such as new IP addresses and missing billing info. The RCA process required analyzing IAM Trust Policies and reviewing any available CloudTrail logs. Key engineering takeaway: always enforce MFA on root accounts and provision a scoped IAM Admin User following IAM Least Privilege principles at initialization to prevent lockout scenarios.
+The immediate account lockout highlights AWS automated fraud detection mechanisms targeting suspicious signals (new IP, unverified billing info). RCA required evaluating IAM Trust Policies, CloudTrail logs, and identity credentials. Key takeaway: enforce root MFA and configure IAM Admin Users with Least Privilege from day one.
 
 #### Analytical (BA/SA Perspective)
-From a project risk management perspective, a Day-1 account lockout creates a critical blocker for the entire 12-week delivery schedule. The decision to file a Support Case immediately rather than waiting passively demonstrates proactive risk mitigation. This incident underscores the necessity of a contingency plan for development environments — including a backup account strategy — before commencing any Cloud-native project.
+From a project risk management standpoint: account issues in week 1 present a critical blocker for the 12-week timeline. Submitting a Support Case immediately demonstrates proactive risk mitigation. This underlines the necessity of contingency planning for development environments before initiating cloud projects.
 
 ### Next Steps:
-Resolve account lockout; complete 5 Onboarding tasks to activate Cloud Credits and begin hands-on Lab practice.
+Resolve account lockout completely; complete 5 Onboarding tasks to activate Cloud Credits and finalize group task allocations.

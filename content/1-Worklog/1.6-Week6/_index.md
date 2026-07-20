@@ -8,31 +8,31 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives:
 
-* Configure API Gateway REST API with Cognito JWT Authorizer and Payload Mapping Templates.
-* Implement full business logic for the three core Lambda functions.
-* Author OpenAPI/Swagger specification for Frontend handover.
+* Complete Lab 3 sign-off (VPC Security/NAT/VPN) and execute >50% of Lab 4 (Windows Server 2025/Linux, AMI, EBS Snapshots).
+* Configure API Gateway REST API with Cognito JWT Authorizer and Payload Mapping Templates (VTL).
+* Implement C# business logic for 3 core Lambda functions (`TransactionFunction`, `BudgetFunction`, `ReportFunction`) and publish OpenAPI specs.
 
 ### Tasks to be carried out this week:
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Mon - Wed | Configure API Gateway REST API: define Resources and Methods per endpoint, attach Cognito JWT Authorizer to reject unauthenticated requests at the Gateway boundary (zero Lambda invocation cost). Configure **Payload Mapping Template** (VTL) to extract `sub` from JWT claims and inject into downstream Lambda request body. | 06/08/2026 | 06/10/2026 | [API Gateway Authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) |
-| Thu - Fri | Implement C# business logic for three Lambda functions: **TransactionFunction** (DynamoDB CRUD with budget threshold validation on write); **BudgetFunction** (compute and update remaining budget per spending category); **ReportFunction** (aggregate monthly spending statistics via `QueryAsync` with GSI). | 06/11/2026 | 06/12/2026 | [AWS Lambda Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) |
-| Sat - Sun | Execute end-to-end integration tests: validate full flow Authentication → API Gateway → Lambda → DynamoDB via Postman. Author OpenAPI (Swagger YAML) specification documenting request/response schemas, error codes, and authentication headers for Frontend handover. | 06/13/2026 | 06/14/2026 | [OpenAPI Specification](https://swagger.io/specification/) |
+| Mon - Wed | Resolve network traffic issues and complete **Lab 3** sign-off (VPC Firewall, NAT Gateway, Site-to-Site VPN). Initiate **Lab 4**: deploy isolated VPC, run Windows Server 2025 and Amazon Linux EC2s (>50% completed). | 06/08/2026 | 06/10/2026 | [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) |
+| Thu - Fri | Practice EC2 lifecycle management in Lab 4 (EBS Snapshots, Custom AMIs). Configure API Gateway REST API: define `/transactions`, `/budgets`, `/reports` Resources & Methods. Attach Cognito JWT Authorizer. | 06/11/2026 | 06/12/2026 | [API Gateway Authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) |
+| Sat - Sun | Implement C# business logic for three core Lambdas: `TransactionFunction`, `BudgetFunction`, `ReportFunction`. Use VTL Payload Mapping Template to inject JWT `sub` User ID. Draft OpenAPI/Swagger docs for Frontend handover. | 06/13/2026 | 06/14/2026 | [AWS Lambda Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) |
 
 ### Week 6 Achievements:
 
-* API Gateway with Cognito Authorizer active: unauthorized requests rejected at perimeter with zero Lambda compute spend.
-* Three core Lambda functions (Transaction, Budget, Report) fully implemented and integration-tested.
-* OpenAPI/Swagger spec delivered to Frontend Engineer, unblocking parallel integration work.
+* Successfully signed off Lab 3 and completed over 50% of Lab 4 exercises.
+* Operationalized API Gateway REST API with Cognito Authorizer, enforcing perimeter access control.
+* Delivered 3 core C# Lambda functions and handed over OpenAPI specifications to Frontend developers.
 
 ### Dual-Perspective Reflection:
 
 #### Technical (Cloud Engineer Perspective)
-Positioning the Cognito Authorizer at API Gateway rather than inside Lambda code is a key architectural decision: **rejecting unauthenticated requests at the perimeter** eliminates Lambda invocations and their associated Cold Start cost for unauthorized traffic. The Payload Mapping Template uses Velocity Template Language (VTL) to extract `context.authorizer.claims.sub` and inject it into the request body — ensuring Lambda never parses JWT tokens directly, enforcing Separation of Concerns. ReportFunction leverages a GSI (Global Secondary Index) instead of Scan to aggregate monthly spending with predictable, bounded cost.
+Enforcing Cognito Authorization at API Gateway rather than within Lambda code **rejects unauthorized requests at the edge** — conserving Lambda execution budgets. Mastering EC2 AMI and EBS Snapshot management in Lab 4 deepens knowledge of server backup and disaster recovery.
 
 #### Analytical (BA/SA Perspective)
-The OpenAPI/Swagger document is not a technical artifact — it is the **operational contract** between Backend and Frontend teams for the duration of integration. Precisely defining HTTP status codes (200/400/401/403/500), error response schemas, and authentication header requirements enables Frontend Engineers to implement error-handling states autonomously, without escalating to Backend — measurably reducing cross-team communication overhead and increasing parallel development velocity.
+OpenAPI/Swagger documentation serves as the **Single Source of Truth** between Backend and Frontend engineers. Defining HTTP status codes and payload contracts enables independent Frontend development without communication bottlenecks.
 
 ### Next Steps:
-Execute Frontend-Backend integration: debug CORS policy, resolve JWT parsing issues, and optimize Lambda Cold Start via ReadyToRun compilation.
+Achieve sign-off for Labs 4 through 9; initiate Lab 10 CloudFormation; integrate Frontend-Backend, debug CORS/JWT, and optimize C# Lambda Cold Starts.

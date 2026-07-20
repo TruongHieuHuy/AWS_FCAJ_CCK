@@ -8,31 +8,31 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5:
 
+* Khắc phục lỗi phân quyền IAM, nghiệm thu thành công Lab 2 và thực hành Troubleshooting Lab 3 (EC2/VPC).
 * Thiết kế DynamoDB Single-Table Schema tối ưu cho tất cả Access Patterns của Budget Tracker.
-* Cấu hình S3 Bucket và triển khai cơ chế S3 Presigned URL để upload hóa đơn an toàn.
-* Tích hợp AWS SDK DynamoDB vào C# Lambda và tối ưu query để giảm RCU/WCU tiêu thụ.
+* Cấu hình S3 Bucket và triển khai cơ chế S3 Presigned URL để upload ảnh hóa đơn an toàn.
 
 ### Các công việc cần triển khai trong tuần này:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 - Thứ 4 | Thiết kế DynamoDB Single-Table Schema: xác định Partition Key (`PK`) và Sort Key (`SK`) cho các entity USER, TRANSACTION, BUDGET. Họp chốt kiến trúc với Database Engineer để đảm bảo các Access Patterns (lấy transactions theo tháng, kiểm tra budget theo category) không gây **Hot Partition** và tiêu thụ RCU/WCU tối thiểu. | 01/06/2026 | 03/06/2026 | [DynamoDB Core Components](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html) |
-| Thứ 5 - Thứ 6 | Provision S3 Bucket với cấu hình: Block Public Access toàn bộ, Server-Side Encryption (SSE-S3), Bucket Policy cho phép Lambda role truy cập. Triển khai cơ chế Presigned URL (TTL 15 phút) trong C# Lambda cho phép client upload ảnh hóa đơn trực tiếp lên S3 mà không đi qua Backend — giảm tải Lambda và tiết kiệm băng thông. | 04/06/2026 | 05/06/2026 | [Amazon S3 Presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) |
-| Thứ 7 - CN | Tích hợp `AWSSDK.DynamoDBv2` vào C# Lambda: sử dụng `DynamoDBContext` với `QueryAsync` (thay vì `ScanAsync`) để truy vấn theo PK — tránh Full Table Scan tốn kém. Cấu hình S3 CORS policy cho phép domain Frontend thực hiện PUT request trực tiếp. | 06/06/2026 | 07/06/2026 | [AWS SDK for .NET - DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html) |
+| Thứ 2 - Thứ 4 | Khắc phục sự cố phân quyền IAM và nghiệm thu bài **Lab 2** (VPC & Networking). Nghiên cứu chuẩn hóa sơ đồ kiến trúc AWS qua draw.io. Thiết kế DynamoDB Single-Table Schema: xác định `PK` và `SK` cho USER, TRANSACTION, BUDGET. | 01/06/2026 | 03/06/2026 | [DynamoDB Core Components](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html) |
+| Thứ 5 - Thứ 6 | Triển khai bài **Lab 3**: thực hành Troubleshooting rà soát Security Group, Route Table và VPC do gặp sự cố nghẽn kết nối tại máy chủ EC2. Provision S3 Bucket với SSE-S3 encryption và Block Public Access. | 04/06/2026 | 05/06/2026 | [Amazon S3 Presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) |
+| Thứ 7 - CN | Triển khai cơ chế Presigned URL (TTL 15 phút) trong C# Lambda cho phép client upload ảnh hóa đơn trực tiếp lên S3. Tích hợp `AWSSDK.DynamoDBv2` sử dụng `QueryAsync` thay vì `ScanAsync`. Hoàn thiện Module 4 Workshop. | 06/06/2026 | 07/06/2026 | [AWS SDK for .NET - DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html) |
 
 ### Kết quả đạt được tuần 5:
 
-* Single-Table Schema hoàn chỉnh, hỗ trợ tất cả Access Patterns với chi phí RCU/WCU được tối ưu.
-* S3 Presigned URL hoạt động: client upload hóa đơn trực tiếp, Lambda không phải xử lý binary data.
-* C# Lambda kết nối DynamoDB thành công với `QueryAsync`, tránh Hot Partition và Full Table Scan.
+* Nghiệm thu bài Lab 2 thành công và nâng cao kỹ năng troubleshooting mạng VPC trong Lab 3.
+* Single-Table Schema hoàn chỉnh trên DynamoDB, hỗ trợ đầy đủ Access Patterns với chi phí tối ưu.
+* S3 Presigned URL hoạt động: client upload hóa đơn trực tiếp, Lambda không bị tính phí xử lý file binary.
 
 ### Góc nhìn Đối ngẫu (Dual-Perspective Reflection):
 
 #### Kỹ thuật (Cloud Engineer Perspective)
-DynamoDB Single-Table Design yêu cầu tư duy **Access-Pattern-First** thay vì Entity-First: thay vì thiết kế bảng theo entity (User table, Transaction table riêng biệt), ta thiết kế theo câu query thực tế. Ví dụ: `PK=USER#userId` + `SK=TRANSACTION#2026-06` cho phép lấy toàn bộ transaction của tháng 6 bằng một query duy nhất mà không cần Scan. Việc phân tách upload hóa đơn qua S3 Presigned URL thay vì multipart form qua Lambda giúp tránh Lambda timeout với file lớn và giảm chi phí invocation.
+Kỹ năng troubleshooting mạng trong Lab 3 (rút ra từ việc thiếu Route `0.0.0.0/0` trong Route Table của EC2 Subnet) bổ trợ trực tiếp cho tư duy vận hành hạ tầng Cloud. Với DynamoDB, thiết kế Single-Table yêu cầu tư duy **Access-Pattern-First**: việc đặt `SK=TXN#<timestamp>#<id>` cho phép truy vấn lọc giao dịch theo thời gian nhanh chóng mà không cần Full Table Scan.
 
 #### Hệ thống & Phối hợp (BA/SA Perspective)
-Bài toán DynamoDB Hot Partition là một rủi ro ẩn: nếu nhiều user cùng truy cập một Partition Key (ví dụ: admin account), throughput bị bottleneck tại một partition duy nhất. Việc thiết kế PK phân tán theo `userId` ngay từ đầu đảm bảo **horizontal scalability** — khi user base tăng, DynamoDB tự động phân phối tải đều. Đây là quyết định kiến trúc có tác động dài hạn mà nếu không giải quyết sớm, việc migration schema sau này sẽ cực kỳ tốn kém.
+Việc tách luồng upload hóa đơn qua S3 Presigned URL thay vì gửi file qua Lambda Backend là quyết định tối ưu chi phí và hiệu năng quan trọng (giảm tải CPU/Memory cho Lambda). Kết hợp việc hoàn thành bài Lab 2 về VPC giúp toàn nhóm tự tin cấu hình hạ tầng lưu trữ và mạng an toàn.
 
 ### Kế hoạch tuần tiếp theo:
-Cấu hình API Gateway REST API với Cognito JWT Authorizer và triển khai business logic hoàn chỉnh cho các Lambda functions.
+Nghiệm thu Lab 3 & triển khai Lab 4 (Windows/Linux EC2 lifecycle); cấu hình API Gateway REST API, Cognito JWT Authorizer và 3 Lambda core functions.
