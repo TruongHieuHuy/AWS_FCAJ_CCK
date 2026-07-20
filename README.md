@@ -160,8 +160,7 @@ AWS_FCAJ_CCK/                     # Hugo Portfolio (Internship Report)
 │   ├── 4-EventParticipated/      # AWS Community Day 2026 & FCAJ Community Day reports
 │   ├── 5-Workshop/               # Step-by-step workshop guide (12 modules)
 │   ├── 6-Self-evaluation/        # Competency self-assessment
-│   ├── 7-Feedback/               # Sharing & feedback
-│   └── 8-website/                # Live product demo & video walkthrough
+│   └── 7-Feedback/               # Sharing & feedback
 ├── static/images/                # All embedded screenshots and diagrams
 ├── themes/hugo-theme-learn/      # Hugo theme (git submodule)
 └── config.toml                   # Hugo multilingual (EN/VI) configuration
