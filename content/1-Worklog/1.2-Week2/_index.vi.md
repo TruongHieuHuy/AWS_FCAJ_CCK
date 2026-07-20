@@ -36,4 +36,4 @@ Sự cố IAM Trust Relationship khiến tài khoản bị khóa là một kịc
 Việc chủ động triển khai Mitigation Strategy (tạo tài khoản mới) thay vì chờ Support Case giải quyết thể hiện tư duy **time-to-value optimization** — ưu tiên duy trì tiến độ dự án hơn là chờ giải pháp lý tưởng. Phối hợp phân công nhiệm vụ rõ ràng trong nhóm tạo đà tăng tốc cho việc thiết kế kiến trúc hệ thống ở tuần tiếp theo.
 
 ### Kế hoạch tuần tiếp theo:
-Quản lý tài nguyên & tối ưu chi phí AWS Budgets/CloudWatch; tham dự AWS Community Day 2026; thiết kế kiến trúc Serverless và viết Proposal dự án.
+Quản lý tài nguyên & tối ưu chi phí AWS Budgets/CloudWatch, tham dự AWS Community Day 2026, thiết kế kiến trúc Serverless và viết Proposal dự án.

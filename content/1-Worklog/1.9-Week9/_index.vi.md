@@ -24,15 +24,15 @@ pre: " <b> 1.9. </b> "
 
 * Nghiệm thu thành công 100% toàn bộ chuỗi 16 bài thực hành AWS Labs.
 * Event-Driven notification pipeline hoạt động: cảnh báo ngân sách gửi email qua SQS → SNS ổn định với cơ chế Idempotency chống trùng mail.
-* EventBridge Cron Rule kích hoạt báo cáo tháng tự động; hoàn thành Module 8 Workshop và tiến độ báo cáo Web cá nhân.
+* EventBridge Cron Rule kích hoạt báo cáo tháng tự động, hoàn thành Module 8 Workshop và tiến độ báo cáo Web cá nhân.
 
 ### Góc nhìn Đối ngẫu (Dual-Perspective Reflection):
 
 #### Kỹ thuật (Cloud Engineer Perspective)
-Nghiệm thu bài Lab 15 & 16 về Docker & Amazon ECS Blue/Green Deployment giúp hoàn thiện bộ kỹ năng containerization. Trong dự án Serverless, cơ chế at-least-once delivery của SQS đòi hỏi xử lý Idempotency bằng DynamoDB (MessageId + TTL) để ngăn chặn việc gửi trùng email notification khi SQS re-deliver message.
+Kiến thức containerization từ Lab 15-16 giúp mở rộng hiểu biết về Microservices ngoài Serverless. Áp dụng **Idempotency Pattern với DynamoDB TTL (MessageId deduplication)** trong SQS consumer Lambda đảm bảo dù SQS delivery retry nhiều lần thì email cảnh báo budget cũng chỉ được gửi đúng 1 lần duy nhất cho người dùng.
 
 #### Hệ thống & Phối hợp (BA/SA Perspective)
-Hoàn tất 100% chuỗi 16 bài Lab đánh dấu cột mốc quan trọng trong lộ trình thực tập. Kiến trúc Async Notification là resilience pattern giúp giải phóng hoàn toàn độ trễ cho người dùng khi thực hiện thao tác nhập liệu giao dịch.
+Nghiệm thu 100% 16 AWS Labs đánh dấu sự trưởng thành vượt bậc về kỹ năng hạ tầng Đám mây. Luồng thông báo Event-Driven giúp phân tách mối quan tâm (Decoupling): việc tính toán budget alert được xử lý ngầm ở background mà không làm tăng độ trễ response của API thêm bất kỳ ms nào.
 
 ### Kế hoạch tuần tiếp theo:
-Hoàn tất 100% dự án nhóm & cá nhân; rà soát đồng bộ hóa tài liệu (Proposal, Blog, Workshop); nghiên cứu AWS Well-Architected Framework.
+Hoàn tất 100% dự án nhóm & cá nhân, rà soát đồng bộ hóa tài liệu (Proposal, Blog, Workshop), nghiên cứu AWS Well-Architected Framework.

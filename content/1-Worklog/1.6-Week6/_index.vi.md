@@ -24,15 +24,15 @@ pre: " <b> 1.6. </b> "
 
 * Nghiệm thu bài Lab 3 thành công và hoàn thành hơn 50% tiến độ bài Lab 4.
 * API Gateway REST API với Cognito Authorizer hoạt động: chặn request không hợp lệ ngay tại biên.
-* Ba hàm C# Lambda cốt lõi triển khai hoàn chỉnh; bàn giao OpenAPI specification cho Frontend.
+* Ba hàm C# Lambda cốt lõi triển khai hoàn chỉnh, bàn giao OpenAPI specification cho Frontend.
 
 ### Góc nhìn Đối ngẫu (Dual-Perspective Reflection):
 
 #### Kỹ thuật (Cloud Engineer Perspective)
-Đặt Cognito Authorizer tại API Gateway thay vì xác thực trong Lambda code giúp **reject unauthenticated requests tại biên** — tiết kiệm chi phí Lambda invocation. Việc kết hợp kiến thức quản trị EC2 AMI & EBS Snapshots từ Lab 4 giúp nâng cao tư duy bảo toàn dữ liệu và tạo bản sao dự phòng cho hạ tầng máy chủ.
+VTL Mapping Template tại API Gateway layer là điểm then chốt trong kiến trúc: bằng cách extract `sub` từ Cognito JWT claims và inject vào Lambda event payload, backend hoàn toàn không phải parse hay decode JWT thủ công, giúp giảm bớt latency xử lý.
 
 #### Hệ thống & Phối hợp (BA/SA Perspective)
-Tài liệu OpenAPI/Swagger đóng vai trò là **Single Source of Truth** giữa Backend và Frontend trong suốt quá trình phát triển. Việc chốt rõ HTTP status codes và payload schema giúp nhóm phát triển Frontend làm việc độc lập, tự chủ xử lý error states mà không bị gián đoạn.
+Bàn giao tài liệu OpenAPI/Swagger specification chuẩn tuần này giúp đảm bảo sự ăn khớp tuyệt đối giữa Frontend và Backend. Kế hoạch nghiệm thu liên hoàn chuỗi AWS Labs từ 4 đến 9 giúp đội ngũ nắm vững bức tranh toàn cảnh hạ tầng AWS Cloud trước khi bước vào giai đoạn tích hợp AI.
 
 ### Kế hoạch tuần tiếp theo:
-Nghiệm thu chuỗi Lab 4 đến Lab 9; khởi động Lab 10 CloudFormation; tích hợp Frontend-Backend, sửa lỗi CORS/JWT và tối ưu C# Lambda Cold Start.
+Nghiệm thu chuỗi Lab 4 đến Lab 9, khởi động Lab 10 CloudFormation, tích hợp Frontend-Backend, sửa lỗi CORS/JWT và tối ưu C# Lambda Cold Start.

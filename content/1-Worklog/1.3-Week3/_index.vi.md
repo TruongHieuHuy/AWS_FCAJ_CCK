@@ -16,7 +16,7 @@ pre: " <b> 1.3. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 - Thứ 4 | Nghiên cứu tài nguyên & quản lý chi phí (AWS Budgets, CloudWatch Metrics/Alarms); xử lý môi trường CloudShell. Tổ chức họp nhóm thiết kế kiến trúc Serverless Stack (API Gateway + C# Lambda + DynamoDB). | 18/05/2026 | 20/05/2026 | [AWS Serverless Architecture Patterns](https://aws.amazon.com/architecture/serverless/) |
+| Thứ 2 - Thứ 4 | Nghiên cứu tài nguyên & quản lý chi phí (AWS Budgets, CloudWatch Metrics/Alarms), xử lý môi trường CloudShell. Tổ chức họp nhóm thiết kế kiến trúc Serverless Stack (API Gateway + C# Lambda + DynamoDB). | 18/05/2026 | 20/05/2026 | [AWS Serverless Architecture Patterns](https://aws.amazon.com/architecture/serverless/) |
 | Thứ 5 - Thứ 6 | Tham dự hội thảo AWS Community Day 2026, hoàn thành báo cáo chuyên sâu GenAI & Multi-Agent Systems. Khởi tạo Git monorepo Backend C# .NET 8 Web API với dependency injection và `.gitignore` chuẩn. | 21/05/2026 | 22/05/2026 | [.NET on AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-csharp.html) |
 | Thứ 7 - CN | Soạn thảo Project Proposal: kiến trúc hệ thống (Architecture Diagram), ước tính chi phí vận hành sử dụng AWS Pricing Calculator (Lambda invocations, DynamoDB RCU/WCU, API Gateway, Gemini API), phân công công việc WBS. | 23/05/2026 | 24/05/2026 | [AWS Pricing Calculator](https://calculator.aws/pricing/2/home) |
 
@@ -35,4 +35,4 @@ Lựa chọn kiến trúc Serverless (API Gateway + Lambda + DynamoDB) không ch
 Bản Proposal không chỉ là tài liệu kỹ thuật — nó là **contract** giữa các thành viên nhóm. Việc ước tính chi phí sử dụng AWS Pricing Calculator với các kịch bản thực tế giúp nhóm hiểu rõ ngưỡng chi phí. Kết hợp kiến thức tiếp thu từ AWS Community Day 2026 giúp nhóm bổ sung góc nhìn AI tiên tiến vào roadmap sản phẩm.
 
 ### Kế hoạch tuần tiếp theo:
-Tham vấn Mentor gỡ lỗi IAM/CloudShell; nghiên cứu repo "Hera" & Bedrock AgentCore; triển khai hạ tầng mạng VPC và Cognito Auth cho dự án.
+Tham vấn Mentor gỡ lỗi IAM/CloudShell, nghiên cứu repo "Hera" & Bedrock AgentCore, triển khai hạ tầng mạng VPC và Cognito Auth cho dự án.

@@ -35,4 +35,4 @@ Kỹ năng troubleshooting mạng trong Lab 3 (rút ra từ việc thiếu Route
 Việc tách luồng upload hóa đơn qua S3 Presigned URL thay vì gửi file qua Lambda Backend là quyết định tối ưu chi phí và hiệu năng quan trọng (giảm tải CPU/Memory cho Lambda). Kết hợp việc hoàn thành bài Lab 2 về VPC giúp toàn nhóm tự tin cấu hình hạ tầng lưu trữ và mạng an toàn.
 
 ### Kế hoạch tuần tiếp theo:
-Nghiệm thu Lab 3 & triển khai Lab 4 (Windows/Linux EC2 lifecycle); cấu hình API Gateway REST API, Cognito JWT Authorizer và 3 Lambda core functions.
+Nghiệm thu Lab 3 & triển khai Lab 4 (Windows/Linux EC2 lifecycle), cấu hình API Gateway REST API, Cognito JWT Authorizer và 3 Lambda core functions.

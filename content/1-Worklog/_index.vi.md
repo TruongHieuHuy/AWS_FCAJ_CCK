@@ -12,42 +12,42 @@ Lộ trình 12 tuần được tổ chức theo 5 giai đoạn tăng tiến rõ 
 
 **Giai đoạn 1 — Thiết lập môi trường, Onboarding & Thiết kế hệ thống (Tuần 1–3)**
 
-**Tuần 1:** [Khởi động, Phân tích Root Cause & Proposal](1.1-Week1/) — Nghiên cứu định hướng FCAJ & lộ trình Cloud Journey; khởi tạo tài khoản AWS, xử lý sự cố tài khoản bị khóa và thực hiện Root Cause Analysis; khảo sát bài toán tài chính và định hình phạm vi dự án nhóm Budget Tracker.
+**Tuần 1:** [Khởi động, Phân tích Root Cause & Proposal](1.1-Week1/) — Nghiên cứu định hướng FCAJ và lộ trình Cloud Journey. Khởi tạo tài khoản AWS, xử lý sự cố tài khoản bị khóa và thực hiện Root Cause Analysis. Khảo sát bài toán tài chính và định hình phạm vi dự án nhóm Budget Tracker.
 
-**Tuần 2:** [Onboarding Tasks & Mitigation Strategy](1.2-Week2/) — Giải quyết blocker bằng tài khoản dự phòng; hoàn thành 5/5 nhiệm vụ Onboarding (EC2, Lambda, RDS Aurora, AWS Budgets, Bedrock Claude 3 Haiku Model Access); kích hoạt $100 AWS Cloud Credits; thống nhất phân công vai trò nhóm.
+**Tuần 2:** [Onboarding Tasks & Mitigation Strategy](1.2-Week2/) — Giải quyết blocker bằng tài khoản dự phòng. Hoàn thành 5/5 nhiệm vụ Onboarding (EC2, Lambda, RDS Aurora, AWS Budgets, Bedrock Claude 3 Haiku Model Access), kích hoạt $100 AWS Cloud Credits và thống nhất phân công vai trò nhóm.
 
-**Tuần 3:** [AWS Budgets/CloudWatch & Thiết kế Kiến trúc](1.3-Week3/) — Xây dựng Khung quản lý chi phí AWS Budgets/CloudWatch; tham dự AWS Community Day 2026 (GenAI & Multi-Agent); chốt sơ đồ Serverless Stack (API Gateway → C# Lambda → DynamoDB → S3); soạn thảo Proposal với AWS Pricing Calculator.
+**Tuần 3:** [AWS Budgets/CloudWatch & Thiết kế Kiến trúc](1.3-Week3/) — Xây dựng Khung quản lý chi phí AWS Budgets/CloudWatch. Tham dự AWS Community Day 2026 (GenAI & Multi-Agent), chốt sơ đồ Serverless Stack (API Gateway → C# Lambda → DynamoDB → S3) và soạn thảo Proposal với AWS Pricing Calculator.
 
 ---
 
 **Giai đoạn 2 — Hạ tầng Mạng VPC, DynamoDB & Backend Core (Tuần 4–6)**
 
-**Tuần 4:** [VPC Network, Cognito Auth & Bedrock AgentCore](1.4-Week4/) — Tham vấn Mentor khắc phục sự cố IAM/CloudShell; tham gia AWS Student Builder Group & nghiên cứu repo "Hera" (Bedrock AgentCore Voice Agents); provision VPC Subnets, Cognito User Pool Auth & phát triển C# Lambda CRUD APIs.
+**Tuần 4:** [VPC Network, Cognito Auth & Bedrock AgentCore](1.4-Week4/) — Tham vấn Mentor khắc phục sự cố IAM/CloudShell. Tham gia AWS Student Builder Group và nghiên cứu repo "Hera" (Bedrock AgentCore Voice Agents). Provision VPC Subnets, Cognito User Pool Auth và phát triển C# Lambda CRUD APIs.
 
-**Tuần 5:** [Lab 2-3 VPC Troubleshooting, DynamoDB & S3 Presigned URL](1.5-Week5/) — Nghiệm thu Lab 2 (AWS Networking & VPC); troubleshooting nghẽn kết nối EC2 trong Lab 3; thiết kế DynamoDB Single-Table Schema (`PK`/`SK`); triển khai cơ chế S3 Presigned URL cho upload ảnh hóa đơn.
+**Tuần 5:** [Lab 2-3 VPC Troubleshooting, DynamoDB & S3 Presigned URL](1.5-Week5/) — Nghiệm thu Lab 2 (AWS Networking & VPC). Troubleshooting nghẽn kết nối EC2 trong Lab 3. Thiết kế DynamoDB Single-Table Schema (`PK`/`SK`) và triển khai cơ chế S3 Presigned URL cho upload ảnh hóa đơn.
 
-**Tuần 6:** [Lab 3-4 EC2 Lifecycle, API Gateway & Business Logic](1.6-Week6/) — Nghiệm thu Lab 3 (VPC Security/NAT/VPN); hoàn thành >50% Lab 4 (Windows Server 2025/Linux, Custom AMI, EBS Snapshots); thiết lập API Gateway REST API với Cognito JWT Authorizer (VTL mapping) & 3 C# Lambdas cốt lõi; bàn giao OpenAPI specs.
+**Tuần 6:** [Lab 3-4 EC2 Lifecycle, API Gateway & Business Logic](1.6-Week6/) — Nghiệm thu Lab 3 (VPC Security/NAT/VPN), hoàn thành >50% Lab 4 (Windows Server 2025/Linux, Custom AMI, EBS Snapshots). Thiết lập API Gateway REST API với Cognito JWT Authorizer (VTL mapping), 3 C# Lambdas cốt lõi và bàn giao OpenAPI specs.
 
 ---
 
 **Giai đoạn 3 — Nghiệm thu Chuỗi AWS Labs & AI/Edge Security (Tuần 7–8)**
 
-**Tuần 7:** [Chuỗi Lab 4-9, Cold Start Optimization & Module 5-6](1.7-Week7/) — Nghiệm thu liên hoàn chuỗi Lab 4-9 (IAM Governance, EC2-RDS Multi-AZ, Auto Scaling, ALB, CloudWatch, AWS Support); khởi động Lab 10 CloudFormation IaC; gỡ lỗi CORS/JWT tích hợp UI; tối ưu Cold Start C# Lambda (`ReadyToRun`, 3.5s ➔ ~800ms); hoàn thiện Module 5-6 Workshop.
+**Tuần 7:** [Chuỗi Lab 4-9, Cold Start Optimization & Module 5-6](1.7-Week7/) — Nghiệm thu liên hoàn chuỗi Lab 4-9 (IAM Governance, EC2-RDS Multi-AZ, Auto Scaling, ALB, CloudWatch, AWS Support). Khởi động Lab 10 CloudFormation IaC, gỡ lỗi CORS/JWT tích hợp UI, tối ưu Cold Start C# Lambda (`ReadyToRun`, 3.5s ➔ ~800ms) và hoàn thiện Module 5-6 Workshop.
 
-**Tuần 8:** [Advanced AWS Labs 10-14, Gemini AI & Edge Security](1.8-Week8/) — Trải nghiệm môi trường doanh nghiệp; hoàn thành các bài AWS Labs đến Lab 14; tham gia AWS FCAJ Community Day; tích hợp Google Gemini 2.5 Flash (Structured Outputs auto-categorization & Financial Chatbot with Guardrails); cấu hình CloudFront CDN + AWS WAFv2; khởi động dự án cá nhân Workshop Web report.
+**Tuần 8:** [Advanced AWS Labs 10-14, Gemini AI & Edge Security](1.8-Week8/) — Trải nghiệm môi trường doanh nghiệp, hoàn thành các bài AWS Labs đến Lab 14 và tham gia AWS FCAJ Community Day. Tích hợp Google Gemini 2.5 Flash (Structured Outputs auto-categorization & Financial Chatbot with Guardrails), cấu hình CloudFront CDN + AWS WAFv2 và khởi động dự án cá nhân Workshop Web report.
 
 ---
 
 **Giai đoạn 4 — 100% AWS Labs Completion, Event-Driven & Document Alignment (Tuần 9–10)**
 
-**Tuần 9:** [Nghiệm thu 100% Lab 15-16 ECS/Docker & Event-Driven Async Pipeline](1.9-Week9/) — Nghiệm thu 100% Lab 15 (Docker) & Lab 16 (Amazon ECS Blue/Green Deployment); hoàn tất chuỗi 16 bài AWS Labs; xây dựng luồng thông báo bất đồng bộ SQS + SNS với Idempotency pattern (DynamoDB TTL 24h) & EventBridge Cron scheduler.
+**Tuần 9:** [Nghiệm thu 100% Lab 15-16 ECS/Docker & Event-Driven Async Pipeline](1.9-Week9/) — Nghiệm thu 100% Lab 15 (Docker) và Lab 16 (Amazon ECS Blue/Green Deployment), hoàn tất chuỗi 16 bài AWS Labs. Xây dựng luồng thông báo bất đồng bộ SQS + SNS với Idempotency pattern (DynamoDB TTL 24h) và EventBridge Cron scheduler.
 
-**Tuần 10:** [Final Review, Single Source of Truth & Well-Architected Framework](1.10-Week10/) — Nghiệm thu 100% Dự án nhóm & Cá nhân; phát hiện bất đồng bộ tài liệu và refactor toàn bộ Proposal, Blog, Workshop theo tiêu chuẩn Single Source of Truth; nghiên cứu AWS Well-Architected Framework.
+**Tuần 10:** [Final Review, Single Source of Truth & Well-Architected Framework](1.10-Week10/) — Nghiệm thu 100% Dự án nhóm và Dự án cá nhân. Phát hiện bất đồng bộ tài liệu và refactor toàn bộ Proposal, Blog, Workshop theo tiêu chuẩn Single Source of Truth. Nghiên cứu AWS Well-Architected Framework.
 
 ---
 
 **Giai đoạn 5 — Infrastructure as Code, CI/CD Pipeline & Handover (Tuần 11–12)**
 
-**Tuần 11:** [Infrastructure as Code (AWS SAM) & GitHub Actions OIDC](1.11-Week11/) — Soạn thảo AWS SAM `template.yaml` đóng gói toàn bộ hạ tầng Serverless từ kinh nghiệm Lab 10; xây dựng CI/CD Pipeline tự động qua GitHub Actions tích hợp cơ chế xác thực OIDC (zero long-lived credentials); xuất bản Module 11 Workshop.
+**Tuần 11:** [Infrastructure as Code (AWS SAM) & GitHub Actions OIDC](1.11-Week11/) — Soạn thảo AWS SAM `template.yaml` đóng gói toàn bộ hạ tầng Serverless từ kinh nghiệm Lab 10. Xây dựng CI/CD Pipeline tự động qua GitHub Actions tích hợp cơ chế xác thực OIDC (zero long-lived credentials) và xuất bản Module 11 Workshop.
 
-**Tuần 12:** [UAT, Cost Audit, Resource Cleanup & Báo cáo tổng kết](1.12-Week12/) — Thực hiện User Acceptance Testing (UAT) toàn diện; kiểm toán AWS Cost Explorer; thực hiện Resource Cleanup (Module 12) giải phóng 100% billable resources trên AWS Cloud; biên soạn Báo cáo thực tập tổng kết.
+**Tuần 12:** [UAT, Cost Audit, Resource Cleanup & Báo cáo tổng kết](1.12-Week12/) — Thực hiện User Acceptance Testing (UAT) toàn diện, kiểm toán AWS Cost Explorer, thực hiện Resource Cleanup (Module 12) giải phóng 100% billable resources trên AWS Cloud và biên soạn Báo cáo thực tập tổng kết.
